@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>广东文趣娱乐有限公司</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400&display=swap"
+          rel="stylesheet">
+
     <!-- CSS 样式 -->
     <style>
         * {
@@ -117,88 +118,89 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="广东文趣娱乐有限公司">
-            </div>
-            <ul class="menu">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于我们</a></li>
-                <li><a href="#services">服务</a></li>
-                <li><a href="#contact">联系我们</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>欢迎来到广东文趣娱乐有限公司</h1>
-            <p>引领娱乐行业新潮流，创造精彩未来</p>
-            <a href="#contact" class="cta-button">联系我们</a>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="广东文趣娱乐有限公司">
         </div>
-    </section>
+        <ul class="menu">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#services">服务</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="about" class="about-us">
-        <div class="content">
-            <h2>关于我们</h2>
-            <p>广东文趣娱乐有限公司致力于打造全球领先的娱乐内容平台，我们提供多样化的娱乐解决方案，从影视制作到数字娱乐，为全球用户带来最优质的娱乐体验。</p>
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>欢迎来到广东文趣娱乐有限公司</h1>
+        <p>引领娱乐行业新潮流，创造精彩未来</p>
+        <a href="#contact" class="cta-button">联系我们</a>
+    </div>
+</section>
+
+<section id="about" class="about-us">
+    <div class="content">
+        <h2>关于我们</h2>
+        <p>
+            广东文趣娱乐有限公司致力于打造全球领先的娱乐内容平台，我们提供多样化的娱乐解决方案，从影视制作到数字娱乐，为全球用户带来最优质的娱乐体验。</p>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <h2>我们的服务</h2>
+    <div class="service-list">
+        <div class="service-item">
+            <h3>影视制作</h3>
+            <p>我们提供高质量的影视制作服务，包括剧本创作、拍摄制作、后期剪辑等。</p>
         </div>
-    </section>
-
-    <section id="services" class="services">
-        <h2>我们的服务</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <h3>影视制作</h3>
-                <p>我们提供高质量的影视制作服务，包括剧本创作、拍摄制作、后期剪辑等。</p>
-            </div>
-            <div class="service-item">
-                <h3>数字娱乐</h3>
-                <p>我们涉足多种数字娱乐领域，打造创新的互动内容与娱乐产品。</p>
-            </div>
-            <div class="service-item">
-                <h3>品牌推广</h3>
-                <p>我们为企业提供定制化的品牌推广服务，助力品牌脱颖而出。</p>
-            </div>
+        <div class="service-item">
+            <h3>数字娱乐</h3>
+            <p>我们涉足多种数字娱乐领域，打造创新的互动内容与娱乐产品。</p>
         </div>
-    </section>
+        <div class="service-item">
+            <h3>品牌推广</h3>
+            <p>我们为企业提供定制化的品牌推广服务，助力品牌脱颖而出。</p>
+        </div>
+    </div>
+</section>
 
-    <section id="contact" class="contact">
-        <h2>联系我们</h2>
-        <form action="#">
-            <input type="text" placeholder="姓名" required>
-            <input type="email" placeholder="电子邮件" required>
-            <textarea placeholder="留言" required></textarea>
-            <button type="submit">提交</button>
-        </form>
-    </section>
+<section id="contact" class="contact">
+    <h2>联系我们</h2>
+    <form action="#">
+        <input type="text" placeholder="姓名" required>
+        <input type="email" placeholder="电子邮件" required>
+        <textarea placeholder="留言" required></textarea>
+        <button type="submit">提交</button>
+    </form>
+</section>
 
-    <footer>
-        <p>&copy; 2025 广东文趣娱乐有限公司 | All Rights Reserved</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 广东文趣娱乐有限公司 | All Rights Reserved</p>
+</footer>
 
-    <!-- jQuery 和 JS 脚本 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Scroll effect for navigation
-            $("nav .menu li a").on("click", function(e) {
-                e.preventDefault();
-                var targetId = $(this).attr("href").substring(1);
-                $('html, body').animate({
-                    scrollTop: $("#" + targetId).offset().top - 60
-                }, 800);
-            });
-
-            // Smooth scroll effect for CTA button
-            $(".cta-button").on("click", function(e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $("#contact").offset().top - 60
-                }, 800);
-            });
+<!-- jQuery 和 JS 脚本 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Scroll effect for navigation
+        $("nav .menu li a").on("click", function (e) {
+            e.preventDefault();
+            var targetId = $(this).attr("href").substring(1);
+            $('html, body').animate({
+                scrollTop: $("#" + targetId).offset().top - 60
+            }, 800);
         });
-    </script>
+
+        // Smooth scroll effect for CTA button
+        $(".cta-button").on("click", function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top - 60
+            }, 800);
+        });
+    });
+</script>
 </body>
 </html>
